@@ -28,6 +28,27 @@ pnpm build
 3. 「Load unpacked」を選択
 4. このプロジェクトの `dist` ディレクトリを指定
 
+## GitHubからインストール
+
+1. GitHub上でこのリポジトリを取得（`Code` -> `Download ZIP`）するか、以下でクローン:
+
+```bash
+git clone https://github.com/<your-account>/<your-repo>.git
+cd <your-repo>
+```
+
+2. 依存関係をインストールしてビルド:
+
+```bash
+pnpm install
+pnpm build
+```
+
+3. Chromeで `chrome://extensions` を開く
+4. 右上の「Developer mode」を有効化
+5. 「Load unpacked」を選択
+6. このプロジェクトの `dist` ディレクトリを指定
+
 ## 使い方
 
 1. 任意ページでテキストを選択

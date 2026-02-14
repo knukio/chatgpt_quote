@@ -1,6 +1,5 @@
 # ChatGPT Quote
 
-English README  
 [日本語版README](./README.ja.md)
 
 Chrome extension to insert selected text into the ChatGPT prompt as Markdown blockquotes (`>`), via shortcut or context menu.
@@ -29,6 +28,27 @@ pnpm build
 2. Enable Developer mode
 3. Click Load unpacked
 4. Select the `dist` directory from this project
+
+## Install From GitHub
+
+1. Download this repository from GitHub (`Code` -> `Download ZIP`) or clone it:
+
+```bash
+git clone https://github.com/<your-account>/<your-repo>.git
+cd <your-repo>
+```
+
+1. Install dependencies and build:
+
+```bash
+pnpm install
+pnpm build
+```
+
+1. Open `chrome://extensions`
+2. Enable Developer mode
+3. Click Load unpacked
+4. Select this project's `dist` directory
 
 ## Usage
 
