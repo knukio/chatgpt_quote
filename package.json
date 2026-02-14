@@ -1,0 +1,28 @@
+{
+  "name": "chatgpt_quote",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "package:zip": "pnpm build && cd dist && zip -r ../chatgpt-quote.zip .",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "vitest run --exclude .pnpm-store/**",
+    "test:watch": "vitest --exclude .pnpm-store/**"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "latest",
+    "@eslint/js": "^10.0.1",
+    "@types/chrome": "latest",
+    "@typescript-eslint/eslint-plugin": "^8.55.0",
+    "@typescript-eslint/parser": "^8.55.0",
+    "eslint": "^10.0.0",
+    "typescript": "latest",
+    "vite": "latest",
+    "vitest": "^4.0.18"
+  },
+  "packageManager": "pnpm@10.27.0+sha512.72d699da16b1179c14ba9e64dc71c9a40988cbdc65c264cb0e489db7de917f20dcf4d64d8723625f2969ba52d4b7e2a1170682d9ac2a5dcaeaab732b7e16f04a"
+}
